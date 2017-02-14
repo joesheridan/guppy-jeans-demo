@@ -1,4 +1,4 @@
-### A brief description of the functionality your solution provides to the users
+### Functionality Summary
 
 The functionality of the solution provides the user with the option to run all 
 the queries described in the test document.
@@ -6,7 +6,7 @@ The code was written in a generic way to allow for any combination of columns.
 It would therefore be trivial to add additional queries or allow the user to pick
 and choose which columns to include in the query.
 
-### How to open your solution in a browser and use it with a sample dataset
+### How to open the demo in a browser
 
 The application was based on the `create-react-app` application generator.
 To run the application, enter the following at the command prompt: 
@@ -26,7 +26,7 @@ python -m SimpleHTTPServer 9999
 ```
 and can be accessed on http://localhost:9999
 
-### How to run any tests you have included
+### How to run the tests
 
 To run the tests, simply run:
 ```
@@ -34,7 +34,7 @@ npm test
 ```
 This will run the jest tests.
 
-### Reasons/justification for each library or framework you decide to use, if any
+### Reasons/justification for libraries/frameworks used
 
 * ReactJS - React is a light-weight javascript library (as FB describe it) built to maximize reusable components
 and handle the rendering of ui components in a sensible manner.
@@ -45,7 +45,7 @@ integrate with React, directly in JSX.
 It fits in very well with JSX and preparing the data on which the ui components rely.
 * Jest - jest is a testing framework for React.
 
-### Reasons for your choice of data format and protocol for the API.
+### API Format
 
 I decided to use JSON as the data format because it is the native JavaScript
 object storage format and therefore very easy to read, parse, transmit and use in test
@@ -60,7 +60,7 @@ For production use, I would use HTTPS (SSL) so that sensitive data could not be 
 in transit. I would also add some secure authentication scheme such as OAuth or JWT to
 increase data privacy. I would also compress the data to decrease download time.
 
-### Assumptions you made, if any, due to unclear requirements
+### Assumptions
 The sales data dates have been assumed to be American format (mm/dd/yyyy) since JavaScript doesn't 
 natively accept GB format (dd/mm/yyyy). This could be fixed by using something like moment.js
 or other custom code to reverse the days and months.
